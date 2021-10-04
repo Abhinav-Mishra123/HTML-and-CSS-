@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>survey form</title>
+	<style>
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items:center ;
+		flex-direction: column;
+		background-color: cyan;
+
+	}
+	.form-section::before {
+		content: "";
+		position: absolute;
+		widows: 100%;
+		height: 100%;
+		background-color: whitesmoke;
+		/*z-index: -1;*/
+
+	}
+	.form-section {background-color: whitesmoke;
+		border: 3px dotted black;
+		margin: 15px 0px;
+		padding: 20px 30px;
+	}
+	#Name {
+		padding: 2px 3px;
+		margin: 2px 3px;
+		font-weight: bold;
+		font-size: 16px;
+	}
+	#email {
+		padding: 2px 3px;
+		margin: 2px 3px;
+		font-weight: bold;
+		font-size: 16px;
+	}
+	#age {
+		padding: 2px 3px;
+		margin: 2px 3px;
+		font-weight: bold;
+		font-size: 16px;
+	}
+	#wo {
+		padding: 2px 3px;
+		margin: 2px 3px;
+		font-weight: bold;
+		font-size: 16px;
+	}
+	#para {
+
+		padding: 2px 3px;
+		margin: 2px 3px;
+		font-weight: bold;
+		font-size: 16px;
+	}
+	#fav {
+		padding: 2px 3px;
+		margin: 2px 3px;
+		font-weight: bold;
+		font-size: 16px;
+	}
+	#para2 {
+		padding: 2px 3px;
+		margin: 2px 3px;
+		font-weight: bold;
+		font-size: 16px;
+	}
+
+	 #ty {
+		    margin: 3px 3px;
+    padding: 4px 124px;
+    /*text-align: left;*/
+    border-radius: 20px;border: 2px solid black;
+	}
+	#op {margin: 3px 3px;
+    padding: 4px 124px;
+    border-radius: 20px;
+    border: 2px solid black;
+	}
+	#ui {
+		margin: 3px 3px;
+    padding: 4px 175px;
+    border-radius: 20px;
+    border: 2px solid black;
+	}
+	#work {margin: 3px 3px;
+    padding: 4px 145px;
+    border-radius: 20px;
+    border: 2px solid black;
+
+	}
+	#project {margin: 3px 3px;
+    padding: 4px 150px;
+    border-radius: 20px;
+    border: 2px solid black;
+
+	}
+	#name {margin: 3px 3px;
+    padding: 40px 150px;
+    border-radius: 20px;
+    border: 2px solid black;
+
+	}
+#sub {
+	display: block;
+	width: 100%;
+	margin: auto;
+	padding: 2px;
+	border-radius: 15px;
+	background-color: green;
+	cursor: pointer;
+	border: 2px solid black;
+}
+#sub:hover {
+	background-color: white;
+	color: black;
+}
+
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1 id="first-heading">SSC(Staff selection commission) form</h1>
+			<p>Thank you for taking the time to help us improve the platform </p>
+		</div>
+		<div class="form-section">
+			<form action="noaction.php">
+				<label for="name" id="Name" name ="name">Name</label><div>
+				<input type="text" id="ty" placeholder="Enter your Name"><div>
+
+				<label for="name" id="email">Email</label><div>
+					<input type="Email" id="op" placeholder="Enter your Email"><div>
+
+					<label for="Age" id="age">Age(optional)</label><div>
+					<input type="number" id="ui" min="10" max="60"><div>
+
+						<label for="work" id="wo">Which option best describe your work:</label><div>
+						<select id="work">
+							<option value="Student">Student</option>
+							<option value="Full time student">Full time student</option>
+							<option value="Full time learner">Full time learner</option>
+							<option value="Prefer not to say">Prefer not to say</option>
+							<option value="other">Other</option>
+						</select>
+
+						<p id="para">Would you recommend freeCodecamp to a friend:</p>
+						<input type="radio" id="am1" name="abhinav mishra" value="Definitely">
+						<label for="am1">Definitely</label><div>
+						<input type="radio" id="am2" name="abhinav mishra" value="Maybe">
+						<label for="am2">Maybe</label><div>
+						<input type="radio" id="am3" name="abhinav mishra" value="Not sure">
+						<label for="am3">Not sure</label><div>
+
+						<label for="project" id="fav">What is your favourite feature of FreeCodecamp :</label><div>
+						<select id="project">
+							<option value="Challenges">Challenges</option>
+							<option value="project">Project</option>
+							<option value="Community">Community</option>
+							<option value="Open Source">Open Source</option></select>
+
+							<p id="para2">What would you like to see improved (Check all that apply)</p>
+							<input type="checkbox" id="front" name="front" value="Front end">
+							<label for="front">Front-end Project</label><div>
+							<input type="checkbox" id="Back" name="Back" value="Back end">
+							<label for="Back">Back-end Project</label><div>
+							<input type="checkbox" id="Data" name="Data" value="Data visualization">
+							<label for="Data">Data visualization</label><div>
+							<input type="checkbox" id="Data" name="Data" value="Data visualization">
+							<label for="Chall">Challenges</label><div>
+							<input type="checkbox" id="Chall" name="Chall" value="Challenges">
+							<label for="Open">Open Source Community</label><div>
+
+<input type="checkbox" id="Open" name="Open" value="Open Source Community">
+							<label for="Gitter">Gitter help rooms</label><div>
+
+<input type="checkbox" id="Gitter" name="Gitter" value="Gitter help rooms">
+							<label for="video">Videos</label><div>
+
+<input type="checkbox" id="video" name="video" value="Videos">
+							<label for="City">City Meetups</label><div>
+
+<input type="checkbox" id="City" name="City" value="City Meetups">
+							<label for="Wiki">Wiki</label><div>
+
+<input type="checkbox" id="Wiki" name="Wiki" value="Wiki">
+							<label for="Forum">Forum</label><div>
+							<input type="checkbox" id="Forum" name="Forum" value="Forumm">
+							<label for="courses">Additional Courses</label><div>
+							
+							<label for="name" id="Name">Any comments or Suggestions?</label><div>		
+							<input type="text" name="name" id="name" placeholder="Enter your comment here">
+								</select><div>
+								<button type="submit" id="sub">Submit</button>
+				
+
+			</form>
+
+
+
+
+		</div>
+	</div>
+	
+</body>
+</html>
